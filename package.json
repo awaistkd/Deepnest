@@ -38,7 +38,8 @@
     "nan": "^2.4.0",
     "paralleljs": "^0.2.1",
     "request": "^2.79.0",
-    "write-file-queue": "0.0.1"
+    "write-file-queue": "0.0.1",
+    "dxf": "^4.4.2"
   },
   "build": {
     "appId": "com.deepnest.io",

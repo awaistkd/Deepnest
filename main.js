@@ -80,8 +80,8 @@ function createMainWindow() {
   var frameless = process.platform == 'darwin';
   //var frameless = true;
   
-  mainWindow = new BrowserWindow({width: Math.ceil(width*0.9), height: Math.ceil(height*0.9), frame: !frameless, show: false})
-
+  mainWindow = new BrowserWindow({width: Math.ceil(width*0.9), height: Math.ceil(height*0.9), frame: !frameless, show: false, webPreferences: { nodeIntegrationInWorker: true }})
+  mainWindow.webContents.openDevTools();
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, './main/index.html'),
